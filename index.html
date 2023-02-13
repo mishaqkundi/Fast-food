@@ -2,271 +2,274 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About</a>
+                    </li>
 
-<body> 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid" >
-      <a class="navbar-brand" href="index.html">Tourism</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="areas.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Areas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sakardu</a></li>
+                            <li><a class="dropdown-item" href="#">Ghiel saif ul malook</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Kashmir</a></li>
+                            <li><a class="dropdown-item" href="#">Mari</a></li>
+                            <li><a class="dropdown-item" href="#">Kaghan</a></li>
+                            <li><a class="dropdown-item" href="#">Naran</a></li>
+                            <li><a class="dropdown-item" href="#">Naighali</a></li>
+                            <li><a class="dropdown-item" href="#">Jamroud</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="writeforus.html">Write for us</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 350px; margin-right: 10px;">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item" style="margin-top: 6px; padding: 0px 10px;">
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+                      </li>
+                </ul>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="areas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Areas
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Sakardu</a></li>
-              <li><a class="dropdown-item" href="#">Ghiel saif ul malook</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Kashmir</a></li>
-              <li><a class="dropdown-item" href="#">Mari</a></li>
-              <li><a class="dropdown-item" href="#">Kaghan</a></li>
-              <li><a class="dropdown-item" href="#">Naran</a></li>
-              <li><a class="dropdown-item" href="#">Naighali</a></li>
-              <li><a class="dropdown-item" href="#">Jamroud</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="writeforus.html">Write for us</a>
-          </li>
-          <li class="nav-item" style="margin-left: 350px; margin-right: 10px;">
-            <a class="nav-link" href="contact.html">Contact us</a>
-        
-          <li class="nav-item" style="margin-top: 6px; padding: 0px 10px;">
-            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
-          </li>
-        </ul>
-
-        <form class="d-flex" role="search"   >
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
-          <button class="btn btn-outline-primary" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
- <!-- Button trigger modal -->
-
-
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+  
  <!-- login  Modal -->
  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="loginModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-          <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">save password</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="signup.html"> <button  type="button" class="btn btn-primary" >New! creat acount</button></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" style="margin: 0px; padding: 0px;">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="slide4.jpeg" class="img-fluid" alt="..." style="  height: 500px; width: 1230px; ">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Welocome to Travelworld</h5>
-          <p>Take only pictures, leave only footprints..</p>
-          <button class="btn btn-primary">Lakes</button>
-          <button class="btn btn-danger">Rastorent</button>
-          <button class="btn btn-success">valleis</button>
-
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="slide5.avif" class="img-fluid" alt="..." style="  height: 450px; width: 1230px; ">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Welocome to Travelworld</h5>
-          <p>Life is short and the world is wide. I better get started.</p>
-          <button class="btn btn-primary">Lakes</button>
-          <button class="btn btn-danger">valleis</button>
-          <button class="btn btn-success">Rastorent</button>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">save password</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="slide6.avif" class="img-fluid" alt="..."  style="  height: 450px; width: 1230px; ">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Welocome to Travelworld</h5>
-          <p>Travel is the only thing you buy that makes you richerTake.</p>
-          <button class="btn btn-primary">Lakes</button>
-          <button class="btn btn-danger">valleis</button>
-          <button class="btn btn-success">Rastorent</button>
-        </div>
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
- 
- <div class="container" style="background-color: aliceblue;">
-<div class="container1" style=" width: 850px;   margin-left: 120px;
-">
-  <div class="row mb-2" style="margin: 0px;padding: 0px;">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Lakes</strong>
-          <h3 class="mb-0">A lake tour</h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This was an amazing tour at lake saifulmalook last ...</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="slide1.png" class="img-fluid"alt="" style="width: 200px; height: 250px;">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Afloat Valley</h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text .</p>
-          <a href="#" >Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-           <img src="slide12.avif"class="img-fluid" alt="" style="width: 200px; height: 250px; ">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="signup.html"> <button  type="button" class="btn btn-primary" >New! creat acount</button></a>
         </div>
       </div>
     </div>
   </div>
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Rastorent</strong>
-          <h3 class="mb-0">Rastorent</h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a .</p>
-          <a href="#" >Continue reading</a>
+  
+    
+    <div class="container1">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="slide4.jpeg " class="d-block w-100" alt="..." style="  height: 450px; width: 1230px; ">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welocome to Tourism</h5>
+                        <p>Life is short and the world is wide. I better get started.</p>
+                        <button class="btn btn-primary">Lakes</button>
+                        <button class="btn btn-danger">valleis</button>
+                        <button class="btn btn-success">Rastorent</button>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-fade">
+                    <img src="slide5.avif" class="d-block w-100" alt="..." style="  height: 450px; width: 1230px; ">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>>Welocome to Tourisml</h5>
+                        <p>Take only pictures, leave only footprints.</p>
+                        <button class="btn btn-primary">Lakes</button>
+                        <button class="btn btn-danger">valleis</button>
+                        <button class="btn btn-success">Rastorent</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="slide6.avif" class="d-block w-100" alt="..." style="  height: 450px; width: 1230px; ">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>>Welocome to Tourism</h5>
+                        <p>Travel is the only thing you buy that makes you richerTake.</p>
+                        <button class="btn btn-primary">Lakes</button>
+                        <button class="btn btn-danger">valleis</button>
+                        <button class="btn btn-success">Rastorent</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="slide9.avif" class="img-fluid" alt=""  style="width: 200px; height: 250px; ">
+    </div>
+
+    <!-- first content  -->
+    <div class="container2" style="margin: 0px 150px 0px 150px;">
+    <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Lakes</strong>
+              <h3 class="mb-0">A lake tour</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">This was an amazing tour at lake saifulmalook last year.
+                We've discoverd...</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+            </div>
+            <img src="slide1.png" alt=""  style="width: 200px; height: 250px; ">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Vallies</strong>
+              <h3 class="mb-0">Afloat valley</h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+             <img src="slide12.avif" alt=""  style="width: 200px; height: 250px; ">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Post title</h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as 
-            content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+        <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Restorents</strong>
+              <h3 class="mb-0">Break fast at coast</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+                content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+             <img src="slide9.avif" alt=""  style="width: 200px; height: 250px; ">
+            </div>
+          </div>
         </div>
-        <div class="col-auto d-none d-lg-block">
-         <img src="slide10.avif" class="img-fluid" alt=""  style="width: 200px; height: 250px; ">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Burje khalief</strong>
+              <h3 class="mb-0">most wonderfull</h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural .</p>
+              <a href="#" class="stretched-link" style="text-decoration: none;">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+             <img src="slide10.avif" alt="" style="width: 200px; height: 250px; ">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    
+      <!-- 2nd content -->
+      <div class="container3" style="background-color: aliceblue; "></div>
+      <div class="row featurette  d-flex justify-content-center align-items-center">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Pakistan top 10 vallies. <span class="text-muted">Reviewed by tourists..</span></h2>
+          <p class="lead">People from all over Pakistan visit this fantastic place to find solace and experience the serenity surrounded by amazing hills, green meadows, and... <a href="#" style="text-decoration: none;">Continue reading</a>.</p>
+        </div>
+        <div class="col-md-5">
+            <img src="slide18.avif" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+          
+        </div>
+      </div>
+      <div class="row featurette  d-flex justify-content-center align-items-center">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Vasco da Gama story.. <span class="text-muted">It'll blow your mind</span>.</span></h2>
+          <p class="lead">In 1497, Portuguese King Manuel I financed a voyage led by Vasco da Gama. Many, however, still... <a href="#"  style="text-decoration: none;">Continue reading</a></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="slide17.avif" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+          
+        </div>
+      </div>
+      <div class="row featurette  d-flex justify-content-center align-items-center">
+        <div class="col-md-7 ">
+          <h2 class="featurette-heading fw-normal lh-1"> mohenjo-daro Tour. <span class="text-muted">Discover the incient civilization.</span></h2>
+          <p class="lead">The ancient settlement of Mohenjo-daro is in Larkana District in the Sindh province of Pakistan. Listed as... <a href="#" style="text-decoration: none;">Continue reading</a>.</p>
+        </div>
+        <div class="col-md-5 ">
+            <img src="slide16.avif" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+          
+        </div>
+      </div>
+    
+     
+      <footer class="text-muted py-5" style="background-color: aliceblue; ">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="index.html">Back to top</a>
+          </p>
+          <p class="mb-1"> copyright © tourism,It is made simple but with time we'll give a dynamic design </p>
+          <p class="mb-0">New to Tourism? <a href="/"> Visit the homepage </a> or read our <a
+              href="/docs/5.3/getting-started/introduction/"> getting started guide </a>.</p>
+        </div>
+      </footer>
 
-<div class="container2"  style=" width: 900px; margin:0px 1500px 20px 100px;">
-  <div class="row featurette d-flex justify-content-center align-items-center" style="border-bottom: 1px solid black;" >
-    <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">Pakistan top 10 Vallies. <spasn class="text-muted">Review by Tourists.</span></h2>
-      <p clas="lead">People from all over Pakistan visit this fantastic place to find solace and experience the serenity surrounded by amazing hills, green <a href="#" >Continue reading</a></p>
-    </div>
-    <div class="col-md-5" >
-      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="slide18.avif" alt="">
-    </div>
-  </div>
-  <div class="row featurette d-flex justify-content-center align-items-center" style="margin-top: 60px; border-bottom: 1px solid black;">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading fw-normal lh-1">Vasco da Gama story. <spasn class="text-muted"> It’ll blow your mind.</span></h2>
-      <p clas="lead">In 1497, Portuguese King Manuel I financed a voyage led by Vasco da Gama. Many, however,  <a href="#" >Continue reading</a></p>
-    </div>
-    <div class="col-md-5 order-md-1">
-      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="slide17.avif" alt="">
-    </div>
-  </div>
-  <div class="row featurette d-flex justify-content-center align-items-center" style="margin-top: 60px;border-bottom: 1px solid black; ">
-    <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <spasn class="text-muted">It’ll blow your mind.</span></h2>
-      <p clas="lead">The ancient settlement of Mohenjo-daro is in Larkana District in the Sindh province of Pakistan. Listed as an<a href="#" >Continue reading</a></p>
-    </div>
-    <div class="col-md-5">
-     <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="slide16.avif" alt="">
-    </div>
-  </div>
-</div>
-</div>
-
-<footer class="text-muted py-5" style="background-color: aliceblue; ">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="index.html">Back to top</a>
-    </p>
-    <p class="mb-1"> copyright © tourism,It is made simple but with time we'll give a dynamic design </p>
-    <p class="mb-0">New to Tourism? <a href="/"> Visit the homepage </a> or read our <a href="/docs/5.3/getting-started/introduction/"> getting started guide </a>.</p>
-  </div>
-</footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
